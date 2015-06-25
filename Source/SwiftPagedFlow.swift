@@ -28,6 +28,8 @@ public class SwiftPagedFlow: UIView{
     public var delegate: SwiftPagedFlowViewDelegate!
     public lazy var minimumPageAlpha: CGFloat = 0.8
     public lazy var minimumPageScale: CGFloat = 0.8
+    /// adjust pageControl origin Y by minus the value from bottom of the SwiftPagedFlow view, for the default pageControl
+    public lazy var pageControlOffsetY: CGFloat = 10
     public lazy var orientation: SwiftPagedFlowViewOrientation = .Horizontal
     public var pageControl: UIPageControl!
     public var currentPageIndex: Int {
@@ -108,7 +110,7 @@ extension SwiftPagedFlow {
         if needReload {
             if pageControl == nil {
                 pageControl = UIPageControl()
-                pageControl.frame = CGRectMake(0, self.bounds.size.height-20, self.bounds.size.width, 10)
+                pageControl.frame = CGRectMake(0, self.bounds.size.height-10-pageControlOffsetY, self.bounds.size.width, 10)
                 self.addSubview(pageControl)
             }
             if let count = dataSource?.numberOfPagesInFlowView(self) {

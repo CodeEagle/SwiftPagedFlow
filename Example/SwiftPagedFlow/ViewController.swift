@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         vFlow.minimumPageAlpha = 0.4
         vFlow.minimumPageScale = 0.8
         vFlow.orientation = .Vertical
+        vFlow.pageControlOffsetY = 50
         
         hFlow.reloadData()
         vFlow.reloadData()
