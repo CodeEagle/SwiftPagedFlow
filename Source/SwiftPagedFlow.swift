@@ -34,6 +34,11 @@ public class SwiftPagedFlow: UIView{
         return _currentPageIndex
     }
     
+    init() {
+        super.init(frame: CGRectZero)
+        initialize()
+    }
+    
     override public init(frame: CGRect){
         super.init(frame: frame)
         initialize()

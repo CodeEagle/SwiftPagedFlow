@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                        A Paging Enabled Flow View, like screenshots view in iPhone App Store.
                        DESC
   s.homepage         = "https://github.com/CodeEagle/SwiftPagedFlow"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots      = "https://raw.githubusercontent.com/CodeEagle/SwiftPagedFlow/master/screenshot.png"
   s.license          = 'MIT'
   s.author           = { "CodeEagle" => "stasura@hotmail.com" }
   s.source           = { :git => "https://github.com/CodeEagle/SwiftPagedFlow.git", :tag => s.version.to_s }
