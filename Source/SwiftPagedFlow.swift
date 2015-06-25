@@ -314,10 +314,10 @@ extension SwiftPagedFlow: UIScrollViewDelegate{
         let horizontal = orientation == .Horizontal
         let up = horizontal ? scrollView.contentOffset.x : scrollView.contentOffset.y
         let down = horizontal ? pageSize.width : pageSize.height
-        let pageIndex = floor(max(up, 0) / down)
-        
+        var index = floor(max(up, 0) / down)
+        let pageIndex = index.isNaN ? 0 : Int(index)
         let tmpIndex = _currentPageIndex
-        _currentPageIndex = Int(pageIndex)
+        _currentPageIndex = pageIndex
         pageControl?.currentPage = _currentPageIndex
         if tmpIndex != _currentPageIndex {
             delegate?.didScrollToPageAtIndex(self, index: _currentPageIndex)
