@@ -30,7 +30,11 @@ public class SwiftPagedFlow: UIView{
     public lazy var minimumPageScale: CGFloat = 0.8
     /// adjust pageControl origin Y by minus the value from bottom of the SwiftPagedFlow view, for the default pageControl
     public lazy var pageControlOffsetY: CGFloat = 10
-    public lazy var orientation: SwiftPagedFlowViewOrientation = .Horizontal
+    public var orientation: SwiftPagedFlowViewOrientation = .Horizontal {
+        didSet {
+            adjustBounce()
+        }
+    }
     public var pageControl: UIPageControl!
     public var currentPageIndex: Int {
         return _currentPageIndex
@@ -181,8 +185,13 @@ extension SwiftPagedFlow {
         superViewOfScrollView.backgroundColor = UIColor.clearColor()
         superViewOfScrollView.addSubview(scrollView)
         self.addSubview(superViewOfScrollView)
-        
-        
+        adjustBounce()
+    }
+    
+    private func adjustBounce(){
+        let h = orientation == .Horizontal
+        scrollView.alwaysBounceHorizontal = h
+        scrollView.alwaysBounceVertical = !h
     }
     
     private func queueReusableCell(cell: UIView) {
