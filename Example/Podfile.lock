@@ -1,0 +1,14 @@
+PODS:
+  - SwiftPagedFlow (0.1.0)
+
+DEPENDENCIES:
+  - SwiftPagedFlow (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftPagedFlow:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftPagedFlow: 8e490f21da47932a991a2819614c0841c77fff80
+
+COCOAPODS: 0.37.2
