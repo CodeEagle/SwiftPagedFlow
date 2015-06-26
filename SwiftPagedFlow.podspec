@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftPagedFlow"
-  s.version          = "0.1.5"
+  s.version          = "0.1.6"
   s.summary          = "PagedFlowView Swift Version "
   s.description      = <<-DESC
                        A Paging Enabled Flow View, like screenshots view in iPhone App Store.

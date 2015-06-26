@@ -281,26 +281,30 @@ extension SwiftPagedFlow {
         }
     }
     private func setPageAtIndex(index: Int) {
-        assert(index >= 0 && index < cells.count, "index over bounds")
-        if let cell = cells[index] as? NSNull {
-            let aCell = dataSource.cellForPageAtIndex(self, index: index)
-            let range = Range(start: index, end: index + 1)
-            cells[index] = aCell
-            let fIndex = CGFloat(index)
-            switch orientation {
-            case .Horizontal:
-                aCell.frame = CGRectMake(pageSize.width * fIndex, 0, pageSize.width, pageSize.height);
-                break;
-            case .Vertical:
-                aCell.frame = CGRectMake(0, pageSize.height * fIndex, pageSize.width, pageSize.height);
-                break;
-            default:
-                break;
+        if index >= 0 && index < cells.count {
+            if let cell = cells[index] as? NSNull {
+                let aCell = dataSource.cellForPageAtIndex(self, index: index)
+                let range = Range(start: index, end: index + 1)
+                cells[index] = aCell
+                let fIndex = CGFloat(index)
+                switch orientation {
+                case .Horizontal:
+                    aCell.frame = CGRectMake(pageSize.width * fIndex, 0, pageSize.width, pageSize.height);
+                    break;
+                case .Vertical:
+                    aCell.frame = CGRectMake(0, pageSize.height * fIndex, pageSize.width, pageSize.height);
+                    break;
+                default:
+                    break;
+                }
+                if aCell.superview == nil {
+                    scrollView .addSubview(aCell)
+                }
             }
-            if aCell.superview == nil {
-                scrollView .addSubview(aCell)
-            }
+        }else{
+            debugPrintln("index over bounds")
         }
+        
     }
     
     func handleTapGesture(tap: UIGestureRecognizer){
