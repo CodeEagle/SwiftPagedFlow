@@ -58,7 +58,6 @@ public class SwiftPagedFlow: UIView{
     }
     
     deinit {
-        scrollView.removeObserver(self, forKeyPath: "contentInset")
         scrollView.delegate = nil
     }
     // MARK: - Private
@@ -108,18 +107,6 @@ extension SwiftPagedFlow {
     }
     
     
-    public override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
-        if keyPath == "contentInset" {
-            debugPrintln("fixed")
-            if scrollView.contentInset.top == 64 {
-                scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
-                let h = orientation == .Horizontal
-                let x = h ? scrollView.contentOffset.x : 0
-                let y = h ? 0 : scrollView.contentOffset.y
-                scrollView.contentOffset = CGPointMake(x, y)
-            }
-        }
-    }
     
 }
 // MARK: - override
@@ -163,11 +150,6 @@ extension SwiftPagedFlow {
         }
     }
     
-    func fixedAutomaticallyAdjustsScrollViewInsets(){
-        scrollView.addObserver(self, forKeyPath: "contentInset", options: NSKeyValueObservingOptions.New, context: nil)
-        
-    }
-    
     public override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
         if self.pointInside(point, withEvent: event) {
             let sp = scrollView.frame.origin
@@ -187,7 +169,6 @@ extension SwiftPagedFlow {
 extension SwiftPagedFlow {
     private func initialize() {
         self.clipsToBounds = true
-        fixedAutomaticallyAdjustsScrollViewInsets()
         let tap = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
         self.addGestureRecognizer(tap)
         
