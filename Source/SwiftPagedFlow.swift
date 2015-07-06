@@ -35,7 +35,10 @@ public class SwiftPagedFlow: UIView{
             adjustBounce()
         }
     }
-    public var pageControl: UIPageControl!
+    public lazy var pageControl: UIPageControl! = {
+        let pc = UIPageControl()
+        return pc
+        }()
     public var currentPageIndex: Int {
         return _currentPageIndex
     }
@@ -125,11 +128,7 @@ extension SwiftPagedFlow {
     public override func layoutSubviews() {
         super.layoutSubviews()
         if needReload {
-            if pageControl == nil {
-                pageControl = UIPageControl()
-                pageControl.frame = CGRectMake(0, self.bounds.size.height-10-pageControlOffsetY, self.bounds.size.width, 10)
-                self.addSubview(pageControl)
-            }
+            pageControl.frame = CGRectMake(0, self.bounds.size.height-10-self.pageControlOffsetY, self.bounds.size.width, 10)
             if let count = dataSource?.numberOfPagesInFlowView(self) {
                 pageCount = count
                 pageControl.numberOfPages = count
@@ -205,6 +204,9 @@ extension SwiftPagedFlow {
         superViewOfScrollView.backgroundColor = UIColor.clearColor()
         superViewOfScrollView.addSubview(scrollView)
         self.addSubview(superViewOfScrollView)
+        
+        self.addSubview(pageControl)
+        
         adjustBounce()
     }
     
@@ -350,7 +352,7 @@ extension SwiftPagedFlow: UIScrollViewDelegate{
         let horizontal = orientation == .Horizontal
         let up = horizontal ? scrollView.contentOffset.x : scrollView.contentOffset.y
         let down = horizontal ? pageSize.width : pageSize.height
-        var index = floor(max(up, 0) / down)
+        var index = floor(max(floor(up), 0) / floor(down))
         let pageIndex = index.isNaN ? 0 : Int(index)
         let tmpIndex = _currentPageIndex
         _currentPageIndex = pageIndex
