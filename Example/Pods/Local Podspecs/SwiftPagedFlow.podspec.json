@@ -1,16 +1,17 @@
 {
   "name": "SwiftPagedFlow",
-  "version": "0.1.0",
-  "summary": "A short description of SwiftPagedFlow.",
-  "description": "                       An optional longer description of SwiftPagedFlow\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "version": "0.1.9",
+  "summary": "PagedFlowView Swift Version",
+  "description": "A Paging Enabled Flow View, like screenshots view in iPhone App Store.",
   "homepage": "https://github.com/CodeEagle/SwiftPagedFlow",
+  "screenshots": "https://raw.githubusercontent.com/CodeEagle/SwiftPagedFlow/master/screenshot.png",
   "license": "MIT",
   "authors": {
     "CodeEagle": "stasura@hotmail.com"
   },
   "source": {
     "git": "https://github.com/CodeEagle/SwiftPagedFlow.git",
-    "tag": "0.1.0"
+    "tag": "0.1.9"
   },
   "social_media_url": "https://twitter.com/_SelfStudio",
   "platforms": {

@@ -52,7 +52,7 @@ public class SwiftPagedFlow: UIView{
         initialize()
     }
     
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
     }
@@ -74,7 +74,7 @@ public class SwiftPagedFlow: UIView{
 extension SwiftPagedFlow {
     public func reloadData() {
         needReload = true
-        for view in scrollView.subviews as! [UIView]{
+        for view in scrollView.subviews {
             view.removeFromSuperview()
         }
         self.setNeedsLayout()
@@ -129,7 +129,7 @@ extension SwiftPagedFlow {
                 removeCellAtIndex(i)
             }
             cells.removeAll(keepCapacity: false)
-            for i in 0..<pageCount {
+            for _ in 0..<pageCount {
                 cells.append(NSNull())
             }
             let h = orientation == .Horizontal
@@ -181,7 +181,7 @@ extension SwiftPagedFlow {
         scrollView.showsVerticalScrollIndicator = false
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         let superViewOfScrollView = UIView(frame: self.bounds)
-        superViewOfScrollView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        superViewOfScrollView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         superViewOfScrollView.backgroundColor = UIColor.clearColor()
         superViewOfScrollView.addSubview(scrollView)
         self.addSubview(superViewOfScrollView)
@@ -217,7 +217,7 @@ extension SwiftPagedFlow {
         let start = visibleRange.location
         let end = start + visibleRange.length
         let h = orientation == .Horizontal
-        var offset:CGFloat = h ? scrollView.contentOffset.x : scrollView.contentOffset.y
+        let offset:CGFloat = h ? scrollView.contentOffset.x : scrollView.contentOffset.y
         for i in start..<end {
             if let cell = cells[i] as? UIView {
                 let value = h ? cell.frame.origin.x : cell.frame.origin.y
@@ -256,7 +256,7 @@ extension SwiftPagedFlow {
         }
         
         var endIndex = startIndex
-        var endStandar = h ? endPoint.x : endPoint.y
+        let endStandar = h ? endPoint.x : endPoint.y
         for i in startIndex..<cells.count {
             //如果都不超过则取最后一个
             let b = (factor * CGFloat(i + 1) < endStandar && factor * CGFloat(i + 2) >= endStandar) || i + 2 == cells.count
@@ -285,9 +285,9 @@ extension SwiftPagedFlow {
     }
     private func setPageAtIndex(index: Int) {
         if index >= 0 && index < cells.count {
-            if let cell = cells[index] as? NSNull {
+            if let _ = cells[index] as? NSNull {
                 let aCell = dataSource.cellForPageAtIndex(self, index: index)
-                let range = Range(start: index, end: index + 1)
+//                let range = Range(start: index, end: index + 1)
                 cells[index] = aCell
                 let fIndex = CGFloat(index)
                 switch orientation {
@@ -297,8 +297,8 @@ extension SwiftPagedFlow {
                 case .Vertical:
                     aCell.frame = CGRectMake(0, pageSize.height * fIndex, pageSize.width, pageSize.height);
                     break;
-                default:
-                    break;
+//                default:
+//                    break;
                 }
                 if aCell.superview == nil {
                     // align aCell from the left
@@ -306,7 +306,7 @@ extension SwiftPagedFlow {
                 }
             }
         }else{
-            debugPrintln("index over bounds")
+            debugPrint("index over bounds")
         }
         
     }
@@ -333,7 +333,7 @@ extension SwiftPagedFlow: UIScrollViewDelegate{
         let horizontal = orientation == .Horizontal
         let up = horizontal ? scrollView.contentOffset.x : scrollView.contentOffset.y
         let down = horizontal ? pageSize.width : pageSize.height
-        var index = floor(max(floor(up), 0) / floor(down))
+        let index = floor(max(floor(up), 0) / floor(down))
         let pageIndex = index.isNaN ? 0 : Int(index)
         let tmpIndex = _currentPageIndex
         _currentPageIndex = pageIndex

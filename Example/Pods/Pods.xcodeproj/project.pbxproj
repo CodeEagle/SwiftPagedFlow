@@ -7,462 +7,474 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12ED3EEDB8A27173E337ACB6 /* Pods-SwiftPagedFlow_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AAF05683B823D138731D842 /* Pods-SwiftPagedFlow_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20C3AE2EF71EB35334B6C1E0 /* Pods-SwiftPagedFlow_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842FFBB48CDE595FA337A3C /* Pods-SwiftPagedFlow_Tests-dummy.m */; };
-		33B38319724C39B2A425E977 /* SwiftPagedFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = E16DB1FB94DEFD0303AA6BA2 /* SwiftPagedFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4013A965C57B30FB5D3E0599 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB588C07275FC796C11F29F /* Foundation.framework */; };
-		5564281749D10B02EE918DAD /* SwiftPagedFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = E16DB1FB94DEFD0303AA6BA2 /* SwiftPagedFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BF066A4B9CD11F9BFB4F2F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410D77F8C967CE5762B2FD89 /* UIKit.framework */; };
-		63F0DF38033ECCB24CE0C7FD /* SwiftPagedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591B135C507AEB1FB0F1EB5D /* SwiftPagedFlow.swift */; };
-		78F1018268DC71F0B5C58038 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 827CA40B4256C2F0CCBAB56B /* Info.plist */; };
-		7B203F496681EE58FF31982C /* SwiftPagedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591B135C507AEB1FB0F1EB5D /* SwiftPagedFlow.swift */; };
-		7D5DF34E0EE80AA0F0E92B75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB588C07275FC796C11F29F /* Foundation.framework */; };
-		8A4AE8900603D92613F6B8F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410D77F8C967CE5762B2FD89 /* UIKit.framework */; };
-		B8B7DDFD893B3D599EF919D8 /* Pods-SwiftPagedFlow_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0600D5303871C93C16952C1F /* Pods-SwiftPagedFlow_Example-dummy.m */; };
-		BC7EDB10C87D2713420E97E0 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 127DDEC9CC9A306E0D7DB816 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCA86EC92D682405B0FBA3C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB588C07275FC796C11F29F /* Foundation.framework */; };
-		BF3FAE77131FA7D315003740 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 827CA40B4256C2F0CCBAB56B /* Info.plist */; };
-		C2F88CB4700E68E3D72035B8 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A218F372F17F1E2D6C84FD3 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C49CDF82904D4A5A465F2BEC /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 380B14900228F6157BDC4072 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-dummy.m */; };
-		C8431729A15EDB2A57C646B6 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC916300A322586BA35881 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-dummy.m */; };
-		D9006CDF314AFA58148C238B /* Pods-SwiftPagedFlow_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01618F99DAF1147A17B554F8 /* Pods-SwiftPagedFlow_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD65688E1B85C424C43ABD6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB588C07275FC796C11F29F /* Foundation.framework */; };
+		0B7E179A1333652D312A1E4426BC878E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		2AEDDE725468CDC1AF073CA3E18555F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		2B50E98DCA08BD23F41EE511A0860BCB /* Pods-SwiftPagedFlow_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D86182579C1C334045D3DAF48CE062F /* Pods-SwiftPagedFlow_Tests-dummy.m */; };
+		31DE7F6BC4F51839AD4DF666017A22DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		3986813487FC557C544EDBF09B692C32 /* Pods-SwiftPagedFlow_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 308C29AA21BE8B0018B36833A905EDC4 /* Pods-SwiftPagedFlow_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		566F9E798754FB25DB8C1472BD9EAD2B /* SwiftPagedFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DEA80D665CE101DF10A99C30539BEA /* SwiftPagedFlow-dummy.m */; };
+		7679581CDCA7633B87EFB64B833BCF55 /* SwiftPagedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3463902D1A1851AF58083245377A0419 /* SwiftPagedFlow.swift */; };
+		94799CF9C2918B0264FADC8D9D18143A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		94C604C898C8385D90FC5EFB117B4FAC /* Pods-SwiftPagedFlow_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FBB56F78D80CE1F2EDF753A0041AFAC /* Pods-SwiftPagedFlow_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F52D3CC99DFADB4E34C4F14FE44571F /* Pods-SwiftPagedFlow_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1164747D25F551CBB40BF058763097E1 /* Pods-SwiftPagedFlow_Example-dummy.m */; };
+		A79C4CECF99D9265FD1F75DC1A31F9C3 /* SwiftPagedFlow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C042F2AE26513FF591477AA80F7A98 /* SwiftPagedFlow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E53D1FD09D84725F47E5FD2FAF428BE8 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE970A4A240A80688EA538CF20C6F /* Info.plist */; };
+		E8910E9AA53DF760567A8569F8E82975 /* SwiftPagedFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 357F4CF9EE72AD877F7EDA4FA0768DAC /* SwiftPagedFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50816FD2B5A806C1FB7BF84D /* PBXContainerItemProxy */ = {
+		7123B5C39C08BE91C2CBB45A28E02C98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0E2A9488BA172B01055970C2 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B1312C2CCC67270C7D84C600;
-			remoteInfo = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow";
+			remoteGlobalIDString = D43432673A42E712FC60A47142D9B96B;
+			remoteInfo = SwiftPagedFlow;
 		};
-		FE67454F8DB148CA540C0661 /* PBXContainerItemProxy */ = {
+		773959A158756C38047AC66341F94C8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0E2A9488BA172B01055970C2 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A7BD6E66C3E2E6BC1E3B2E3C;
-			remoteInfo = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow";
+			remoteGlobalIDString = D43432673A42E712FC60A47142D9B96B;
+			remoteInfo = SwiftPagedFlow;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01618F99DAF1147A17B554F8 /* Pods-SwiftPagedFlow_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Tests-umbrella.h"; sourceTree = "<group>"; };
-		0600D5303871C93C16952C1F /* Pods-SwiftPagedFlow_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPagedFlow_Example-dummy.m"; sourceTree = "<group>"; };
-		09D278992EE796428C6F817F /* Pods-SwiftPagedFlow_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0A218F372F17F1E2D6C84FD3 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow-umbrella.h"; sourceTree = "<group>"; };
-		127DDEC9CC9A306E0D7DB816 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h"; path = "../Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h"; sourceTree = "<group>"; };
-		1EE68F8E48A6E6609060DD3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21B7EB85E0F39966136A5F75 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow-prefix.pch"; sourceTree = "<group>"; };
-		22A861593523A540CB97909A /* Pods-SwiftPagedFlow_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Example.release.xcconfig"; sourceTree = "<group>"; };
-		27AC916300A322586BA35881 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-dummy.m"; path = "../Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-dummy.m"; sourceTree = "<group>"; };
-		2842FFBB48CDE595FA337A3C /* Pods-SwiftPagedFlow_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPagedFlow_Tests-dummy.m"; sourceTree = "<group>"; };
-		380B14900228F6157BDC4072 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow-dummy.m"; sourceTree = "<group>"; };
-		40D19D6691218585547EDD0C /* Pods_SwiftPagedFlow_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPagedFlow_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		410D77F8C967CE5762B2FD89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		47B940B6F907FDD84AB02AA0 /* Pods-SwiftPagedFlow_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftPagedFlow_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4A03E6B0A2676BE2B5A2937C /* Pods-SwiftPagedFlow_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4AAF05683B823D138731D842 /* Pods-SwiftPagedFlow_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Example-umbrella.h"; sourceTree = "<group>"; };
-		52CDE180644D4D8AEF09D833 /* Pods-SwiftPagedFlow_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		591B135C507AEB1FB0F1EB5D /* SwiftPagedFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftPagedFlow.swift; sourceTree = "<group>"; };
-		619B73AA4FE698620808B8CA /* Pods-SwiftPagedFlow_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Tests-environment.h"; sourceTree = "<group>"; };
-		6BB588C07275FC796C11F29F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6EFFA46E3DD826073BD9E443 /* Pods-SwiftPagedFlow_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftPagedFlow_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		70451AFCBC7CF470654A8898 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-prefix.pch"; path = "../Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-prefix.pch"; sourceTree = "<group>"; };
-		799D5404F5B1CDE69B59BC0A /* SwiftPagedFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPagedFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		827CA40B4256C2F0CCBAB56B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D37C55799E1592E428372E6 /* Pods_SwiftPagedFlow_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPagedFlow_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98C656CF31179B29CC06CDCE /* Pods-SwiftPagedFlow_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftPagedFlow_Example.modulemap"; sourceTree = "<group>"; };
-		99400A9CA77D3BD6AFD5406F /* Pods-SwiftPagedFlow_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A1154E996514F5D572C873AC /* Pods-SwiftPagedFlow_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Example-resources.sh"; sourceTree = "<group>"; };
-		A854AF6E0639B634052370E7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B12CB33E1E5A455BF77C76E7 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow.xcconfig"; sourceTree = "<group>"; };
-		BA529F866BB954BBFAED3E03 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-Private.xcconfig"; path = "../Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-Private.xcconfig"; sourceTree = "<group>"; };
-		BBF4B337DE9D2AA459049221 /* Pods-SwiftPagedFlow_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftPagedFlow_Tests.modulemap"; sourceTree = "<group>"; };
-		C7FCD17C5B819CF86691DAA0 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.xcconfig"; path = "../Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.xcconfig"; sourceTree = "<group>"; };
-		D32413F8D60553C5B27648FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Info.plist"; sourceTree = "<group>"; };
-		D88F9ECFCC98C0C1383E2487 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow.modulemap"; sourceTree = "<group>"; };
-		D8DFB0BD7B135EF3971CCF31 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD7EC213EB36F6431C908542 /* Pods-SwiftPagedFlow_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Example-environment.h"; sourceTree = "<group>"; };
-		DFC92162EC7203261A98E91C /* Pods-SwiftPagedFlow_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DFE0C4125F99609A704EB0F5 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow-Private.xcconfig"; sourceTree = "<group>"; };
-		E16DB1FB94DEFD0303AA6BA2 /* SwiftPagedFlow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwiftPagedFlow.h; sourceTree = "<group>"; };
-		E2BC7166D26611C64B14D22A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2C8A43352E53AFFB1965A7F /* SwiftPagedFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPagedFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB3A52FDA9F09277313634D8 /* Pods-SwiftPagedFlow_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Tests-resources.sh"; sourceTree = "<group>"; };
-		ECDC5F55D558F581A12D8F1F /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.modulemap"; path = "../Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.modulemap"; sourceTree = "<group>"; };
-		F2C3F54A85DDDC61452008AD /* Pods-SwiftPagedFlow_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftPagedFlow_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F8E54BC2264D249FF8AA8810 /* Pods-SwiftPagedFlow_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftPagedFlow_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		098F4C531BE8CC13720AD9052FF57FD4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC7D92E3F2F3D8B263C7BC97C981D6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E670082D6DF40A0F0A26CE943B7C1BA /* Pods-SwiftPagedFlow_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Tests-resources.sh"; sourceTree = "<group>"; };
+		1164747D25F551CBB40BF058763097E1 /* Pods-SwiftPagedFlow_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPagedFlow_Example-dummy.m"; sourceTree = "<group>"; };
+		160AECA56E92F47FE90E4A074C7C4C74 /* Pods_SwiftPagedFlow_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPagedFlow_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22010B05C91A726C101084D4BC58D43B /* Pods-SwiftPagedFlow_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Example-frameworks.sh"; sourceTree = "<group>"; };
+		24C042F2AE26513FF591477AA80F7A98 /* SwiftPagedFlow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPagedFlow-umbrella.h"; sourceTree = "<group>"; };
+		2B47749B92D6507FA4AB1F391F40848B /* Pods-SwiftPagedFlow_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Example.release.xcconfig"; sourceTree = "<group>"; };
+		308C29AA21BE8B0018B36833A905EDC4 /* Pods-SwiftPagedFlow_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Example-umbrella.h"; sourceTree = "<group>"; };
+		3463902D1A1851AF58083245377A0419 /* SwiftPagedFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftPagedFlow.swift; sourceTree = "<group>"; };
+		357F4CF9EE72AD877F7EDA4FA0768DAC /* SwiftPagedFlow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwiftPagedFlow.h; sourceTree = "<group>"; };
+		42809EAD0ACB3F97FAC0876BF584DEC2 /* Pods-SwiftPagedFlow_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		45CF0ECA519B35F3C5D80B0AEC9243D3 /* Pods-SwiftPagedFlow_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		64F8C16BDDC07CB04A91F3A7F275AA9F /* Pods-SwiftPagedFlow_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6FBB56F78D80CE1F2EDF753A0041AFAC /* Pods-SwiftPagedFlow_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftPagedFlow_Tests-umbrella.h"; sourceTree = "<group>"; };
+		709EB8E32BE24B96018C8C08A31290BC /* Pods-SwiftPagedFlow_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftPagedFlow_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D86182579C1C334045D3DAF48CE062F /* Pods-SwiftPagedFlow_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftPagedFlow_Tests-dummy.m"; sourceTree = "<group>"; };
+		8C5FE970A4A240A80688EA538CF20C6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB36F0AAACA67CD3AF35305FE6FD599 /* SwiftPagedFlow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftPagedFlow.modulemap; sourceTree = "<group>"; };
+		92536D3CB5AEC35021B4D7BDC93BDCB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952B2CA82822C222A8B2C9C2C148D86D /* Pods_SwiftPagedFlow_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPagedFlow_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CA69118DB7E4CC964F1E55251ED0F6 /* Pods-SwiftPagedFlow_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftPagedFlow_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A8839BF314D553D3B2E07EE642BD53F5 /* Pods-SwiftPagedFlow_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftPagedFlow_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9DEA80D665CE101DF10A99C30539BEA /* SwiftPagedFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftPagedFlow-dummy.m"; sourceTree = "<group>"; };
+		AEA21111571CA2E02AB87097F0B6E6DB /* SwiftPagedFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPagedFlow.xcconfig; sourceTree = "<group>"; };
+		B90A236D6FA40D70E53CE53679E60F4D /* SwiftPagedFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPagedFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C4BCFCE6AA99C32A0337D4FD17EEECB7 /* Pods-SwiftPagedFlow_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftPagedFlow_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC20774C7349A495FB6333229C4363CA /* Pods-SwiftPagedFlow_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftPagedFlow_Example-resources.sh"; sourceTree = "<group>"; };
+		E0F9E442CDD278F26253109D25611E1E /* Pods-SwiftPagedFlow_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftPagedFlow_Example.modulemap"; sourceTree = "<group>"; };
+		EADE466F81D1EC0AD1273AD9937CA1FF /* SwiftPagedFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPagedFlow-prefix.pch"; sourceTree = "<group>"; };
+		ED8B2A19072A0E98F4E9304BF1012CD3 /* Pods-SwiftPagedFlow_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftPagedFlow_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F449726977D9A7503AB3C72ED7B652F0 /* Pods-SwiftPagedFlow_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftPagedFlow_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5C52ABA6EE7AD2B3715E005C /* Frameworks */ = {
+		2719C73BF8CEE6201F49A406E2293922 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D5DF34E0EE80AA0F0E92B75 /* Foundation.framework in Frameworks */,
+				2AEDDE725468CDC1AF073CA3E18555F1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D32053C19A72512BE8D3150 /* Frameworks */ = {
+		4229235A178924A38AD077CCCF6BDE84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD65688E1B85C424C43ABD6F /* Foundation.framework in Frameworks */,
-				8A4AE8900603D92613F6B8F6 /* UIKit.framework in Frameworks */,
+				31DE7F6BC4F51839AD4DF666017A22DF /* Foundation.framework in Frameworks */,
+				0B7E179A1333652D312A1E4426BC878E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B039832676B908771F95D1D6 /* Frameworks */ = {
+		6AF1514E04E7C3D49856BFEA7DDF29DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4013A965C57B30FB5D3E0599 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDDC72746379A030278512A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCA86EC92D682405B0FBA3C1 /* Foundation.framework in Frameworks */,
-				5BF066A4B9CD11F9BFB4F2F9 /* UIKit.framework in Frameworks */,
+				94799CF9C2918B0264FADC8D9D18143A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1263AE72E041B9C1A610C6D9 /* Frameworks */ = {
+		15AD8F16298E2A5A94F9FED2F3372FDB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2AF1C1D739FBA849D517AB37 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2AF1C1D739FBA849D517AB37 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6BB588C07275FC796C11F29F /* Foundation.framework */,
-				410D77F8C967CE5762B2FD89 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3CC98C6E439D3C7D1C7375C0 = {
-			isa = PBXGroup;
-			children = (
-				A854AF6E0639B634052370E7 /* Podfile */,
-				5527215B3709614E17E7AF12 /* Development Pods */,
-				1263AE72E041B9C1A610C6D9 /* Frameworks */,
-				D7E6FC128E5B5A813A872CF0 /* Products */,
-				78F0523D9CE31A834B50C2CA /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		5527215B3709614E17E7AF12 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BBD9F63A263B422DAF42064B /* SwiftPagedFlow */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		78F0523D9CE31A834B50C2CA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E3E87BD6785EA87A051281F9 /* Pods-SwiftPagedFlow_Example */,
-				8623DB7C030701E9F1C4E5AD /* Pods-SwiftPagedFlow_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		8623DB7C030701E9F1C4E5AD /* Pods-SwiftPagedFlow_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E2BC7166D26611C64B14D22A /* Info.plist */,
-				BBF4B337DE9D2AA459049221 /* Pods-SwiftPagedFlow_Tests.modulemap */,
-				F8E54BC2264D249FF8AA8810 /* Pods-SwiftPagedFlow_Tests-acknowledgements.markdown */,
-				47B940B6F907FDD84AB02AA0 /* Pods-SwiftPagedFlow_Tests-acknowledgements.plist */,
-				2842FFBB48CDE595FA337A3C /* Pods-SwiftPagedFlow_Tests-dummy.m */,
-				619B73AA4FE698620808B8CA /* Pods-SwiftPagedFlow_Tests-environment.h */,
-				4A03E6B0A2676BE2B5A2937C /* Pods-SwiftPagedFlow_Tests-frameworks.sh */,
-				EB3A52FDA9F09277313634D8 /* Pods-SwiftPagedFlow_Tests-resources.sh */,
-				01618F99DAF1147A17B554F8 /* Pods-SwiftPagedFlow_Tests-umbrella.h */,
-				09D278992EE796428C6F817F /* Pods-SwiftPagedFlow_Tests.debug.xcconfig */,
-				52CDE180644D4D8AEF09D833 /* Pods-SwiftPagedFlow_Tests.release.xcconfig */,
-			);
-			name = "Pods-SwiftPagedFlow_Tests";
-			path = "Target Support Files/Pods-SwiftPagedFlow_Tests";
-			sourceTree = "<group>";
-		};
-		8EA5EBB904FBF2A9D40AD9F2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1EE68F8E48A6E6609060DD3A /* Info.plist */,
-				D32413F8D60553C5B27648FE /* Info.plist */,
-				D88F9ECFCC98C0C1383E2487 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow.modulemap */,
-				B12CB33E1E5A455BF77C76E7 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow.xcconfig */,
-				DFE0C4125F99609A704EB0F5 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-Private.xcconfig */,
-				380B14900228F6157BDC4072 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-dummy.m */,
-				21B7EB85E0F39966136A5F75 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-prefix.pch */,
-				0A218F372F17F1E2D6C84FD3 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-umbrella.h */,
-				ECDC5F55D558F581A12D8F1F /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.modulemap */,
-				C7FCD17C5B819CF86691DAA0 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.xcconfig */,
-				BA529F866BB954BBFAED3E03 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-Private.xcconfig */,
-				27AC916300A322586BA35881 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-dummy.m */,
-				70451AFCBC7CF470654A8898 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-prefix.pch */,
-				127DDEC9CC9A306E0D7DB816 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-SwiftPagedFlow_Example-SwiftPagedFlow";
-			sourceTree = "<group>";
-		};
-		B8D7724FC0061DF0DFA07FAC /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				827CA40B4256C2F0CCBAB56B /* Info.plist */,
-				E16DB1FB94DEFD0303AA6BA2 /* SwiftPagedFlow.h */,
-				591B135C507AEB1FB0F1EB5D /* SwiftPagedFlow.swift */,
+				8C5FE970A4A240A80688EA538CF20C6F /* Info.plist */,
+				357F4CF9EE72AD877F7EDA4FA0768DAC /* SwiftPagedFlow.h */,
+				3463902D1A1851AF58083245377A0419 /* SwiftPagedFlow.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		BBD9F63A263B422DAF42064B /* SwiftPagedFlow */ = {
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B8D7724FC0061DF0DFA07FAC /* Source */,
-				8EA5EBB904FBF2A9D40AD9F2 /* Support Files */,
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
 			);
-			name = SwiftPagedFlow;
-			path = ../..;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D7E6FC128E5B5A813A872CF0 /* Products */ = {
+		2148EC498907591B1C404BA1A4626147 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				40D19D6691218585547EDD0C /* Pods_SwiftPagedFlow_Example.framework */,
-				8D37C55799E1592E428372E6 /* Pods_SwiftPagedFlow_Tests.framework */,
-				E2C8A43352E53AFFB1965A7F /* SwiftPagedFlow.framework */,
-				799D5404F5B1CDE69B59BC0A /* SwiftPagedFlow.framework */,
+				35B9681C137809FC2B74B54FE7DCB3DB /* Pods-SwiftPagedFlow_Example */,
+				362B871BAB2FE5984591743B3BED3DEA /* Pods-SwiftPagedFlow_Tests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E3E87BD6785EA87A051281F9 /* Pods-SwiftPagedFlow_Example */ = {
+		35B9681C137809FC2B74B54FE7DCB3DB /* Pods-SwiftPagedFlow_Example */ = {
 			isa = PBXGroup;
 			children = (
-				D8DFB0BD7B135EF3971CCF31 /* Info.plist */,
-				98C656CF31179B29CC06CDCE /* Pods-SwiftPagedFlow_Example.modulemap */,
-				6EFFA46E3DD826073BD9E443 /* Pods-SwiftPagedFlow_Example-acknowledgements.markdown */,
-				F2C3F54A85DDDC61452008AD /* Pods-SwiftPagedFlow_Example-acknowledgements.plist */,
-				0600D5303871C93C16952C1F /* Pods-SwiftPagedFlow_Example-dummy.m */,
-				DD7EC213EB36F6431C908542 /* Pods-SwiftPagedFlow_Example-environment.h */,
-				99400A9CA77D3BD6AFD5406F /* Pods-SwiftPagedFlow_Example-frameworks.sh */,
-				A1154E996514F5D572C873AC /* Pods-SwiftPagedFlow_Example-resources.sh */,
-				4AAF05683B823D138731D842 /* Pods-SwiftPagedFlow_Example-umbrella.h */,
-				DFC92162EC7203261A98E91C /* Pods-SwiftPagedFlow_Example.debug.xcconfig */,
-				22A861593523A540CB97909A /* Pods-SwiftPagedFlow_Example.release.xcconfig */,
+				098F4C531BE8CC13720AD9052FF57FD4 /* Info.plist */,
+				E0F9E442CDD278F26253109D25611E1E /* Pods-SwiftPagedFlow_Example.modulemap */,
+				A4CA69118DB7E4CC964F1E55251ED0F6 /* Pods-SwiftPagedFlow_Example-acknowledgements.markdown */,
+				A8839BF314D553D3B2E07EE642BD53F5 /* Pods-SwiftPagedFlow_Example-acknowledgements.plist */,
+				1164747D25F551CBB40BF058763097E1 /* Pods-SwiftPagedFlow_Example-dummy.m */,
+				22010B05C91A726C101084D4BC58D43B /* Pods-SwiftPagedFlow_Example-frameworks.sh */,
+				CC20774C7349A495FB6333229C4363CA /* Pods-SwiftPagedFlow_Example-resources.sh */,
+				308C29AA21BE8B0018B36833A905EDC4 /* Pods-SwiftPagedFlow_Example-umbrella.h */,
+				42809EAD0ACB3F97FAC0876BF584DEC2 /* Pods-SwiftPagedFlow_Example.debug.xcconfig */,
+				2B47749B92D6507FA4AB1F391F40848B /* Pods-SwiftPagedFlow_Example.release.xcconfig */,
 			);
 			name = "Pods-SwiftPagedFlow_Example";
 			path = "Target Support Files/Pods-SwiftPagedFlow_Example";
 			sourceTree = "<group>";
 		};
+		362B871BAB2FE5984591743B3BED3DEA /* Pods-SwiftPagedFlow_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0AC7D92E3F2F3D8B263C7BC97C981D6D /* Info.plist */,
+				F449726977D9A7503AB3C72ED7B652F0 /* Pods-SwiftPagedFlow_Tests.modulemap */,
+				C4BCFCE6AA99C32A0337D4FD17EEECB7 /* Pods-SwiftPagedFlow_Tests-acknowledgements.markdown */,
+				709EB8E32BE24B96018C8C08A31290BC /* Pods-SwiftPagedFlow_Tests-acknowledgements.plist */,
+				7D86182579C1C334045D3DAF48CE062F /* Pods-SwiftPagedFlow_Tests-dummy.m */,
+				64F8C16BDDC07CB04A91F3A7F275AA9F /* Pods-SwiftPagedFlow_Tests-frameworks.sh */,
+				0E670082D6DF40A0F0A26CE943B7C1BA /* Pods-SwiftPagedFlow_Tests-resources.sh */,
+				6FBB56F78D80CE1F2EDF753A0041AFAC /* Pods-SwiftPagedFlow_Tests-umbrella.h */,
+				ED8B2A19072A0E98F4E9304BF1012CD3 /* Pods-SwiftPagedFlow_Tests.debug.xcconfig */,
+				45CF0ECA519B35F3C5D80B0AEC9243D3 /* Pods-SwiftPagedFlow_Tests.release.xcconfig */,
+			);
+			name = "Pods-SwiftPagedFlow_Tests";
+			path = "Target Support Files/Pods-SwiftPagedFlow_Tests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59EDEAA907CFA2CBED4671242443933E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				160AECA56E92F47FE90E4A074C7C4C74 /* Pods_SwiftPagedFlow_Example.framework */,
+				952B2CA82822C222A8B2C9C2C148D86D /* Pods_SwiftPagedFlow_Tests.framework */,
+				B90A236D6FA40D70E53CE53679E60F4D /* SwiftPagedFlow.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				AB737D40F4E4E435A746BFE3FF0F8535 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				59EDEAA907CFA2CBED4671242443933E /* Products */,
+				2148EC498907591B1C404BA1A4626147 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9CE9ED59A5F342D3BA7DC17712905883 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92536D3CB5AEC35021B4D7BDC93BDCB4 /* Info.plist */,
+				8EB36F0AAACA67CD3AF35305FE6FD599 /* SwiftPagedFlow.modulemap */,
+				AEA21111571CA2E02AB87097F0B6E6DB /* SwiftPagedFlow.xcconfig */,
+				A9DEA80D665CE101DF10A99C30539BEA /* SwiftPagedFlow-dummy.m */,
+				EADE466F81D1EC0AD1273AD9937CA1FF /* SwiftPagedFlow-prefix.pch */,
+				24C042F2AE26513FF591477AA80F7A98 /* SwiftPagedFlow-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftPagedFlow";
+			sourceTree = "<group>";
+		};
+		AB737D40F4E4E435A746BFE3FF0F8535 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2175EF74ABBB2D6E962F1221B0FDCBC /* SwiftPagedFlow */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E2175EF74ABBB2D6E962F1221B0FDCBC /* SwiftPagedFlow */ = {
+			isa = PBXGroup;
+			children = (
+				15AD8F16298E2A5A94F9FED2F3372FDB /* Source */,
+				9CE9ED59A5F342D3BA7DC17712905883 /* Support Files */,
+			);
+			name = SwiftPagedFlow;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0B19DA3D1DE73F7008A0C9A5 /* Headers */ = {
+		38DF2E3FC48E7C0DD4C80EEB0C488B12 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7EDB10C87D2713420E97E0 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h in Headers */,
-				5564281749D10B02EE918DAD /* SwiftPagedFlow.h in Headers */,
+				3986813487FC557C544EDBF09B692C32 /* Pods-SwiftPagedFlow_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EC1D8F4891ABBE6B5584210 /* Headers */ = {
+		5B298A5F89752F0A3960514325F1690A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9006CDF314AFA58148C238B /* Pods-SwiftPagedFlow_Tests-umbrella.h in Headers */,
+				94C604C898C8385D90FC5EFB117B4FAC /* Pods-SwiftPagedFlow_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		762C2C2E3562A907B5205864 /* Headers */ = {
+		75B3E8CCD2FAC89A0F72EB4424822FA8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2F88CB4700E68E3D72035B8 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-umbrella.h in Headers */,
-				33B38319724C39B2A425E977 /* SwiftPagedFlow.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D78856BCACCC40A539836FDF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12ED3EEDB8A27173E337ACB6 /* Pods-SwiftPagedFlow_Example-umbrella.h in Headers */,
+				A79C4CECF99D9265FD1F75DC1A31F9C3 /* SwiftPagedFlow-umbrella.h in Headers */,
+				E8910E9AA53DF760567A8569F8E82975 /* SwiftPagedFlow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		499744DE51A736DAF1C92A41 /* Pods-SwiftPagedFlow_Example */ = {
+		290C34707467ED0425DAF3A822DE2EB3 /* Pods-SwiftPagedFlow_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7BE2C9B9B28BC1564B70F50 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Example" */;
+			buildConfigurationList = 24591B5BF4F58DD9401928766BF953D9 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Tests" */;
 			buildPhases = (
-				6766841208D4B344DF2DD008 /* Sources */,
-				B039832676B908771F95D1D6 /* Frameworks */,
-				D78856BCACCC40A539836FDF /* Headers */,
+				DA86D59654F91712DB596B8E1002ED05 /* Sources */,
+				6AF1514E04E7C3D49856BFEA7DDF29DC /* Frameworks */,
+				5B298A5F89752F0A3960514325F1690A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C35249068275BA5BC9974011 /* PBXTargetDependency */,
-			);
-			name = "Pods-SwiftPagedFlow_Example";
-			productName = "Pods-SwiftPagedFlow_Example";
-			productReference = 40D19D6691218585547EDD0C /* Pods_SwiftPagedFlow_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7C1D289D80BEF683448A61A7 /* Pods-SwiftPagedFlow_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7684053383B5361438821BD0 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Tests" */;
-			buildPhases = (
-				501C3C99EC595E0F2F0EE714 /* Sources */,
-				5C52ABA6EE7AD2B3715E005C /* Frameworks */,
-				3EC1D8F4891ABBE6B5584210 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B7C1A91D3210A8207D592448 /* PBXTargetDependency */,
+				1DBD91E64B2EDB10F9DEF43D0D665CC2 /* PBXTargetDependency */,
 			);
 			name = "Pods-SwiftPagedFlow_Tests";
 			productName = "Pods-SwiftPagedFlow_Tests";
-			productReference = 8D37C55799E1592E428372E6 /* Pods_SwiftPagedFlow_Tests.framework */;
+			productReference = 952B2CA82822C222A8B2C9C2C148D86D /* Pods_SwiftPagedFlow_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A7BD6E66C3E2E6BC1E3B2E3C /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow */ = {
+		55AF8DB6A2223A1FF9682780A081A2F8 /* Pods-SwiftPagedFlow_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B542964930CF2CB6CA846B0 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow" */;
+			buildConfigurationList = 523ED8ED6C61483088E35DC759EDAE3F /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Example" */;
 			buildPhases = (
-				7306864256161479771F2FCD /* Sources */,
-				DDDC72746379A030278512A5 /* Frameworks */,
-				0B19DA3D1DE73F7008A0C9A5 /* Headers */,
+				EF1230003C1F63891588B16A8ACA192E /* Sources */,
+				2719C73BF8CEE6201F49A406E2293922 /* Frameworks */,
+				38DF2E3FC48E7C0DD4C80EEB0C488B12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBCE4D190BD3081705A9AACFCBB6B6B7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftPagedFlow_Example";
+			productName = "Pods-SwiftPagedFlow_Example";
+			productReference = 160AECA56E92F47FE90E4A074C7C4C74 /* Pods_SwiftPagedFlow_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D43432673A42E712FC60A47142D9B96B /* SwiftPagedFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A01CCD6A00C3FB36BB7B79DE576D48 /* Build configuration list for PBXNativeTarget "SwiftPagedFlow" */;
+			buildPhases = (
+				45AA833BD9470BC2AF9F1E3A10FA82BB /* Sources */,
+				4229235A178924A38AD077CCCF6BDE84 /* Frameworks */,
+				75B3E8CCD2FAC89A0F72EB4424822FA8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow";
-			productName = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow";
-			productReference = E2C8A43352E53AFFB1965A7F /* SwiftPagedFlow.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B1312C2CCC67270C7D84C600 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ECE3B3A79D7FC76C0DF4B044 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Example-SwiftPagedFlow" */;
-			buildPhases = (
-				3634805FF166940D8E31FC64 /* Sources */,
-				9D32053C19A72512BE8D3150 /* Frameworks */,
-				762C2C2E3562A907B5205864 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow";
-			productName = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow";
-			productReference = 799D5404F5B1CDE69B59BC0A /* SwiftPagedFlow.framework */;
+			name = SwiftPagedFlow;
+			productName = SwiftPagedFlow;
+			productReference = B90A236D6FA40D70E53CE53679E60F4D /* SwiftPagedFlow.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0E2A9488BA172B01055970C2 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 2F01F46DF6067767F4C57EDF /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3CC98C6E439D3C7D1C7375C0;
-			productRefGroup = D7E6FC128E5B5A813A872CF0 /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 59EDEAA907CFA2CBED4671242443933E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				499744DE51A736DAF1C92A41 /* Pods-SwiftPagedFlow_Example */,
-				B1312C2CCC67270C7D84C600 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow */,
-				7C1D289D80BEF683448A61A7 /* Pods-SwiftPagedFlow_Tests */,
-				A7BD6E66C3E2E6BC1E3B2E3C /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow */,
+				55AF8DB6A2223A1FF9682780A081A2F8 /* Pods-SwiftPagedFlow_Example */,
+				290C34707467ED0425DAF3A822DE2EB3 /* Pods-SwiftPagedFlow_Tests */,
+				D43432673A42E712FC60A47142D9B96B /* SwiftPagedFlow */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3634805FF166940D8E31FC64 /* Sources */ = {
+		45AA833BD9470BC2AF9F1E3A10FA82BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78F1018268DC71F0B5C58038 /* Info.plist in Sources */,
-				C49CDF82904D4A5A465F2BEC /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-dummy.m in Sources */,
-				63F0DF38033ECCB24CE0C7FD /* SwiftPagedFlow.swift in Sources */,
+				E53D1FD09D84725F47E5FD2FAF428BE8 /* Info.plist in Sources */,
+				566F9E798754FB25DB8C1472BD9EAD2B /* SwiftPagedFlow-dummy.m in Sources */,
+				7679581CDCA7633B87EFB64B833BCF55 /* SwiftPagedFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		501C3C99EC595E0F2F0EE714 /* Sources */ = {
+		DA86D59654F91712DB596B8E1002ED05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C3AE2EF71EB35334B6C1E0 /* Pods-SwiftPagedFlow_Tests-dummy.m in Sources */,
+				2B50E98DCA08BD23F41EE511A0860BCB /* Pods-SwiftPagedFlow_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6766841208D4B344DF2DD008 /* Sources */ = {
+		EF1230003C1F63891588B16A8ACA192E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8B7DDFD893B3D599EF919D8 /* Pods-SwiftPagedFlow_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7306864256161479771F2FCD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF3FAE77131FA7D315003740 /* Info.plist in Sources */,
-				C8431729A15EDB2A57C646B6 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-dummy.m in Sources */,
-				7B203F496681EE58FF31982C /* SwiftPagedFlow.swift in Sources */,
+				9F52D3CC99DFADB4E34C4F14FE44571F /* Pods-SwiftPagedFlow_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B7C1A91D3210A8207D592448 /* PBXTargetDependency */ = {
+		1DBD91E64B2EDB10F9DEF43D0D665CC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow";
-			target = A7BD6E66C3E2E6BC1E3B2E3C /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow */;
-			targetProxy = FE67454F8DB148CA540C0661 /* PBXContainerItemProxy */;
+			name = SwiftPagedFlow;
+			target = D43432673A42E712FC60A47142D9B96B /* SwiftPagedFlow */;
+			targetProxy = 7123B5C39C08BE91C2CBB45A28E02C98 /* PBXContainerItemProxy */;
 		};
-		C35249068275BA5BC9974011 /* PBXTargetDependency */ = {
+		DBCE4D190BD3081705A9AACFCBB6B6B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow";
-			target = B1312C2CCC67270C7D84C600 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow */;
-			targetProxy = 50816FD2B5A806C1FB7BF84D /* PBXContainerItemProxy */;
+			name = SwiftPagedFlow;
+			target = D43432673A42E712FC60A47142D9B96B /* SwiftPagedFlow */;
+			targetProxy = 773959A158756C38047AC66341F94C8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3CCB9082C73EF134715578A7 /* Release */ = {
+		0404F5E651B46842868F00002692A131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA21111571CA2E02AB87097F0B6E6DB /* SwiftPagedFlow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPagedFlow/SwiftPagedFlow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPagedFlow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftPagedFlow/SwiftPagedFlow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftPagedFlow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		04098348BDA7CD06C57D508C50189045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA21111571CA2E02AB87097F0B6E6DB /* SwiftPagedFlow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPagedFlow/SwiftPagedFlow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPagedFlow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftPagedFlow/SwiftPagedFlow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftPagedFlow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0544EF6FEB90BB0F91FC085DBBA87801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B47749B92D6507FA4AB1F391F40848B /* Pods-SwiftPagedFlow_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example/Pods-SwiftPagedFlow_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftPagedFlow_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -496,34 +508,7 @@
 			};
 			name = Release;
 		};
-		7DB568AA17D4D2E176CDFE8D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFE0C4125F99609A704EB0F5 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftPagedFlow_Example-SwiftPagedFlow/Pods-SwiftPagedFlow_Example-SwiftPagedFlow-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example-SwiftPagedFlow/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example-SwiftPagedFlow/Pods-SwiftPagedFlow_Example-SwiftPagedFlow.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftPagedFlow;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		829953017870561A9FE284FC /* Debug */ = {
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -562,36 +547,9 @@
 			};
 			name = Debug;
 		};
-		94FAD0A0EE8533CC5CFE194C /* Release */ = {
+		9704EE007D07FC7E795B56826C6F6A1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA529F866BB954BBFAED3E03 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftPagedFlow;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		96CC3E143390315E611F127B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09D278992EE796428C6F817F /* Pods-SwiftPagedFlow_Tests.debug.xcconfig */;
+			baseConfigurationReference = 45CF0ECA519B35F3C5D80B0AEC9243D3 /* Pods-SwiftPagedFlow_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -604,6 +562,37 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests/Pods-SwiftPagedFlow_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftPagedFlow_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D4362A3A39D1DB0CE5A46061EFE5E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED8B2A19072A0E98F4E9304BF1012CD3 /* Pods-SwiftPagedFlow_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests/Pods-SwiftPagedFlow_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -619,94 +608,9 @@
 			};
 			name = Debug;
 		};
-		A2B3FAA4FEDFF3033069459D /* Release */ = {
+		A35D05FDB3E1A2357738BB6856728530 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52CDE180644D4D8AEF09D833 /* Pods-SwiftPagedFlow_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests/Pods-SwiftPagedFlow_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SwiftPagedFlow_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AFF969BC1680370F28123FFC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFE0C4125F99609A704EB0F5 /* Pods-SwiftPagedFlow_Example-SwiftPagedFlow-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftPagedFlow_Example-SwiftPagedFlow/Pods-SwiftPagedFlow_Example-SwiftPagedFlow-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example-SwiftPagedFlow/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example-SwiftPagedFlow/Pods-SwiftPagedFlow_Example-SwiftPagedFlow.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftPagedFlow;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B7FE2F2B17D5BD6741E7FBB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA529F866BB954BBFAED3E03 /* Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow/Pods-SwiftPagedFlow_Tests-SwiftPagedFlow.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftPagedFlow;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C3785DDBAF12DCA9A8B9AF97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFC92162EC7203261A98E91C /* Pods-SwiftPagedFlow_Example.debug.xcconfig */;
+			baseConfigurationReference = 42809EAD0ACB3F97FAC0876BF584DEC2 /* Pods-SwiftPagedFlow_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -719,6 +623,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example/Pods-SwiftPagedFlow_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -733,85 +638,47 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		ECB54FC4B3A89B902E4F39FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22A861593523A540CB97909A /* Pods-SwiftPagedFlow_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftPagedFlow_Example/Pods-SwiftPagedFlow_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_SwiftPagedFlow_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B542964930CF2CB6CA846B0 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow" */ = {
+		24591B5BF4F58DD9401928766BF953D9 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7FE2F2B17D5BD6741E7FBB5 /* Debug */,
-				94FAD0A0EE8533CC5CFE194C /* Release */,
+				9D4362A3A39D1DB0CE5A46061EFE5E10 /* Debug */,
+				9704EE007D07FC7E795B56826C6F6A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F01F46DF6067767F4C57EDF /* Build configuration list for PBXProject "Pods" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				829953017870561A9FE284FC /* Debug */,
-				3CCB9082C73EF134715578A7 /* Release */,
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7684053383B5361438821BD0 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Tests" */ = {
+		523ED8ED6C61483088E35DC759EDAE3F /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96CC3E143390315E611F127B /* Debug */,
-				A2B3FAA4FEDFF3033069459D /* Release */,
+				A35D05FDB3E1A2357738BB6856728530 /* Debug */,
+				0544EF6FEB90BB0F91FC085DBBA87801 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7BE2C9B9B28BC1564B70F50 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Example" */ = {
+		F5A01CCD6A00C3FB36BB7B79DE576D48 /* Build configuration list for PBXNativeTarget "SwiftPagedFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3785DDBAF12DCA9A8B9AF97 /* Debug */,
-				ECB54FC4B3A89B902E4F39FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ECE3B3A79D7FC76C0DF4B044 /* Build configuration list for PBXNativeTarget "Pods-SwiftPagedFlow_Example-SwiftPagedFlow" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFF969BC1680370F28123FFC /* Debug */,
-				7DB568AA17D4D2E176CDFE8D /* Release */,
+				0404F5E651B46842868F00002692A131 /* Debug */,
+				04098348BDA7CD06C57D508C50189045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0E2A9488BA172B01055970C2 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }
