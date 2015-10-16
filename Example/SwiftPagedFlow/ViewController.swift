@@ -64,9 +64,9 @@ extension ViewController: SwiftPagedFlowViewDelegate, SwiftPagedFlowViewDataSour
         return CGSizeMake(width, width*0.75)
     }
     func didScrollToPageAtIndex(flowView: SwiftPagedFlow, index: Int){
-        debugPrintln("Scrolled to page:\(index)")
+        debugPrint("Scrolled to page:\(index)")
     }
     func didTapPageAtIndex(flowView: SwiftPagedFlow, index: Int){
-        debugPrintln("Tapped on page:\(index)")
+        debugPrint("Tapped on page:\(index)")
     }
 }

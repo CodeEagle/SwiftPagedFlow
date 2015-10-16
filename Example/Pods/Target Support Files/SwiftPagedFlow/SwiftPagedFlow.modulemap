@@ -1,5 +1,5 @@
 framework module SwiftPagedFlow {
-  umbrella header "Pods-SwiftPagedFlow_Tests-SwiftPagedFlow-umbrella.h"
+  umbrella header "SwiftPagedFlow-umbrella.h"
 
   export *
   module * { export * }

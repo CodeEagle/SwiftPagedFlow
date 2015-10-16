@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B1312C2CCC67270C7D84C600"
+               BlueprintIdentifier = "D43432673A42E712FC60A47142D9B96B"
                BuildableName = "SwiftPagedFlow.framework"
-               BlueprintName = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow"
+               BlueprintName = "SwiftPagedFlow"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B1312C2CCC67270C7D84C600"
+            BlueprintIdentifier = "D43432673A42E712FC60A47142D9B96B"
             BuildableName = "SwiftPagedFlow.framework"
-            BlueprintName = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow"
+            BlueprintName = "SwiftPagedFlow"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
