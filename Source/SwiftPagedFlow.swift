@@ -28,6 +28,8 @@ public class SwiftPagedFlow: UIView{
     public var delegate: SwiftPagedFlowViewDelegate!
     public lazy var minimumPageAlpha: CGFloat = 0.8
     public lazy var minimumPageScale: CGFloat = 0.8
+    
+    private var task: CancelableTask?
     /// adjust pageControl origin Y by minus the value from bottom of the SwiftPagedFlow view, for the default pageControl
     public lazy var pageControlOffsetY: CGFloat = 10
     public var orientation: SwiftPagedFlowViewOrientation = .Horizontal {
@@ -62,13 +64,19 @@ public class SwiftPagedFlow: UIView{
     }
     // MARK: - Private
     private lazy var needReload = false
-    private lazy var _currentPageIndex: Int = 0
+    private var _currentPageIndex: Int = 0 {
+        didSet {
+           autoLoopNext()
+        }
+    }
     private lazy var pageSize = CGSizeMake(0,0)
     private lazy var pageCount: Int = 0
     private lazy var cells = [NSObject]()
     private lazy var reusableCells = [UIView]()
     private lazy var visibleRange = NSMakeRange(0, 0)
     private lazy var scrollView = UIScrollView()
+    private lazy var timeInterVal: CGFloat = 0
+    
 }
 // MARK: - Public func
 extension SwiftPagedFlow {
@@ -106,7 +114,18 @@ extension SwiftPagedFlow {
         return nil
     }
     
+    public func enableLoopWithInternal(timeInterval: CGFloat, autoStart: Bool = true) {
+        timeInterVal = timeInterval
+        if autoStart { startLoop() }
+    }
     
+    public func startLoop() {
+        autoLoopNext()
+    }
+    
+    public func stopLoop() {
+        cancel(task)
+    }
     
 }
 // MARK: - override
@@ -283,11 +302,30 @@ extension SwiftPagedFlow {
             removeCellAtIndex(i)
         }
     }
+    
+    private func autoLoopNext() {
+        if timeInterVal == 0 {
+            return
+        }
+        cancel(task)
+        task = delay(NSTimeInterval(timeInterVal), work: {[weak self] () -> Void in
+            guard let sself = self else { return }
+            var next = sself._currentPageIndex + 1
+            if next >= sself.dataSource?.numberOfPagesInFlowView(sself) {
+                next = 0
+            }
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                sself._currentPageIndex = next
+                sself.pageControl?.currentPage = next
+                sself.scrollToPage(next)
+            })
+        })
+    }
+    
     private func setPageAtIndex(index: Int) {
         if index >= 0 && index < cells.count {
             if let _ = cells[index] as? NSNull {
                 let aCell = dataSource.cellForPageAtIndex(self, index: index)
-//                let range = Range(start: index, end: index + 1)
                 cells[index] = aCell
                 let fIndex = CGFloat(index)
                 switch orientation {
@@ -297,8 +335,6 @@ extension SwiftPagedFlow {
                 case .Vertical:
                     aCell.frame = CGRectMake(0, pageSize.height * fIndex, pageSize.width, pageSize.height);
                     break;
-//                default:
-//                    break;
                 }
                 if aCell.superview == nil {
                     // align aCell from the left
@@ -342,4 +378,35 @@ extension SwiftPagedFlow: UIScrollViewDelegate{
             delegate?.didScrollToPageAtIndex(self, index: _currentPageIndex)
         }
     }
+}
+
+//MARK:- CancelableTask
+
+typealias CancelableTask = (cancel: Bool) -> Void
+
+func delay(time: NSTimeInterval, work: dispatch_block_t) -> CancelableTask? {
+    
+    var finalTask: CancelableTask?
+    
+    let cancelableTask: CancelableTask = { cancel in
+        if cancel {
+            finalTask = nil // key
+        } else {
+            dispatch_async(dispatch_get_main_queue(), work)
+        }
+    }
+    
+    finalTask = cancelableTask
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
+        if let task = finalTask {
+            task(cancel: false)
+        }
+    }
+    
+    return finalTask
+}
+
+func cancel(cancelableTask: CancelableTask?) {
+    cancelableTask?(cancel: true)
 }

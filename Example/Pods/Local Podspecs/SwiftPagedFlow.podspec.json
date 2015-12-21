@@ -1,6 +1,6 @@
 {
   "name": "SwiftPagedFlow",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "summary": "PagedFlowView Swift Version",
   "description": "A Paging Enabled Flow View, like screenshots view in iPhone App Store.",
   "homepage": "https://github.com/CodeEagle/SwiftPagedFlow",
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://github.com/CodeEagle/SwiftPagedFlow.git",
-    "tag": "0.1.9"
+    "tag": "0.2.0"
   },
   "social_media_url": "https://twitter.com/_SelfStudio",
   "platforms": {

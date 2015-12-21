@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         hFlow.pageControl = pc
         hFlow.minimumPageAlpha = 0.4
         hFlow.minimumPageScale = 0.8
-        
+        hFlow.enableLoopWithInternal(3)
         vFlow.delegate = self
         vFlow.dataSource = self
         vFlow.minimumPageAlpha = 0.4
