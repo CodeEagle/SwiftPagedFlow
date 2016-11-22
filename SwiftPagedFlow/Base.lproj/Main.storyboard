@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftPagedFlow_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2s5-Iv-8mh" customClass="SwiftPagedFlow" customModule="SwiftPagedFlow">
+                                <rect key="frame" x="0.0" y="20" width="375" height="229"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="67T-At-cbW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qtz-Od-dja" customClass="SwiftPagedFlow" customModule="SwiftPagedFlow">
+                                <rect key="frame" x="0.0" y="302" width="375" height="298"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="298" id="2Yr-Y0-d2y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2s5-Iv-8mh" secondAttribute="trailing" id="045-Zf-dFw"/>
+                            <constraint firstItem="Qtz-Od-dja" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1w5-pA-r3E"/>
+                            <constraint firstItem="Qtz-Od-dja" firstAttribute="top" secondItem="2s5-Iv-8mh" secondAttribute="bottom" constant="53" id="CuM-w2-yCW"/>
+                            <constraint firstItem="2s5-Iv-8mh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="YJM-Xz-0Gv"/>
+                            <constraint firstAttribute="trailing" secondItem="Qtz-Od-dja" secondAttribute="trailing" id="fkG-v4-5FC"/>
+                            <constraint firstItem="2s5-Iv-8mh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="zqt-Nz-1h9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hFlow" destination="2s5-Iv-8mh" id="W5b-vC-xbT"/>
+                        <outlet property="vFlow" destination="Qtz-Od-dja" id="5Ye-BN-H79"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

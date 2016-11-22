@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B1312C2CCC67270C7D84C600"
+               BlueprintIdentifier = "16BF559A1DE44E31008318AC"
                BuildableName = "SwiftPagedFlow.framework"
-               BlueprintName = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintName = "SwiftPagedFlow"
+               ReferencedContainer = "container:SwiftPagedFlow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B1312C2CCC67270C7D84C600"
+            BlueprintIdentifier = "16BF559A1DE44E31008318AC"
             BuildableName = "SwiftPagedFlow.framework"
-            BlueprintName = "Pods-SwiftPagedFlow_Example-SwiftPagedFlow"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintName = "SwiftPagedFlow"
+            ReferencedContainer = "container:SwiftPagedFlow.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "16BF559A1DE44E31008318AC"
+            BuildableName = "SwiftPagedFlow.framework"
+            BlueprintName = "SwiftPagedFlow"
+            ReferencedContainer = "container:SwiftPagedFlow.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

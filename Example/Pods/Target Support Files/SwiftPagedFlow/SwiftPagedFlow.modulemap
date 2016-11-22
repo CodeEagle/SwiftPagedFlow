@@ -1,6 +1,0 @@
-framework module SwiftPagedFlow {
-  umbrella header "SwiftPagedFlow-umbrella.h"
-
-  export *
-  module * { export * }
-}

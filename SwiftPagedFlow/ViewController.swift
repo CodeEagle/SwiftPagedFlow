@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftPagedFlow
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var pc: UIPageControl!
@@ -20,14 +20,14 @@ class ViewController: UIViewController {
         hFlow.delegate = self
         hFlow.dataSource = self
         hFlow.pageControl = pc
-        hFlow.minimumPageAlpha = 0.4
+        hFlow.minimumPageAlpha = 0.8
         hFlow.minimumPageScale = 0.8
-        hFlow.enableLoopWithInternal(3)
+//        hFlow.enableLoopWithInternal(3)
         vFlow.delegate = self
         vFlow.dataSource = self
         vFlow.minimumPageAlpha = 0.4
         vFlow.minimumPageScale = 0.8
-        vFlow.orientation = .Vertical
+        vFlow.orientation = .vertical
         vFlow.pageControlOffsetY = 50
         
         hFlow.reloadData()
@@ -42,11 +42,11 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: SwiftPagedFlowViewDelegate, SwiftPagedFlowViewDataSource {
-    func numberOfPagesInFlowView(flowView: SwiftPagedFlow) -> Int{
+    func numberOfPagesInFlowView(_ flowView: SwiftPagedFlow) -> Int{
         return 8
     }
     
-    func cellForPageAtIndex(flowView: SwiftPagedFlow, index: Int) -> UIView{
+    func cellForPageAtIndex(_ flowView: SwiftPagedFlow, index: Int) -> UIView{
         var view = flowView.dequeueReusableCell() as? UIImageView
         if view == nil {
             let aview = UIImageView()
@@ -54,19 +54,19 @@ extension ViewController: SwiftPagedFlowViewDelegate, SwiftPagedFlowViewDataSour
             aview.layer.masksToBounds = true
             view = aview
         }
-        view?.image = UIImage(named: "\(index).tiff", inBundle: nil, compatibleWithTraitCollection: nil)
+        view?.image = UIImage(named: "\(index).tiff", in: nil, compatibleWith: nil)
         return view!
     }
     
     
-    func sizeForPageInFlowView(flowView: SwiftPagedFlow) -> CGSize {
-        let width = self.view.bounds.size.width - 60
-        return CGSizeMake(width, width*0.75)
+    func sizeForPageInFlowView(_ flowView: SwiftPagedFlow) -> CGSize {
+        let width = self.view.bounds.size.width - 100
+        return CGSize(width: width, height: width*0.75)
     }
-    func didScrollToPageAtIndex(flowView: SwiftPagedFlow, index: Int){
+    func didScrollToPageAtIndex(_ flowView: SwiftPagedFlow, index: Int){
         debugPrint("Scrolled to page:\(index)")
     }
-    func didTapPageAtIndex(flowView: SwiftPagedFlow, index: Int){
+    func didTapPageAtIndex(_ flowView: SwiftPagedFlow, index: Int){
         debugPrint("Tapped on page:\(index)")
     }
 }
