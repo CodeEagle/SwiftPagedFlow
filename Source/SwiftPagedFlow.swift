@@ -48,8 +48,8 @@ public enum SwiftPagedFlowViewOrientation: Int {
 }
 open class SwiftPagedFlow: UIView {
     // MARK: - Public
-    open var dataSource: SwiftPagedFlowViewDataSource!
-    open var delegate: SwiftPagedFlowViewDelegate!
+    open var dataSource: SwiftPagedFlowViewDataSource?
+    open var delegate: SwiftPagedFlowViewDelegate?
     open lazy var minimumPageAlpha: CGFloat = 0.8
     open lazy var minimumPageScale: CGFloat = 0.8
 
@@ -57,25 +57,20 @@ open class SwiftPagedFlow: UIView {
     /// adjust pageControl origin Y by minus the value from bottom of the SwiftPagedFlow view, for the default pageControl
     open lazy var pageControlOffsetY: CGFloat = 10
 
-    open var orientation: SwiftPagedFlowViewOrientation = .horizontal {
-        didSet {
-            adjustBounce()
-        }
-    }
-    open var hidePageControl: Bool = false {
-        didSet {
-            pageControl.isHidden = hidePageControl
-        }
-    }
+    open var orientation: SwiftPagedFlowViewOrientation = .horizontal { didSet { adjustBounce() } }
+    
+    open var hidePageControl: Bool = false { didSet { pageControl.isHidden = hidePageControl } }
 
     open lazy var pageControl: UIPageControl! = {
         let pc = UIPageControl()
         return pc
     }()
-    open var currentPageIndex: Int {
-        return _currentPageIndex
-    }
-    init() {
+    
+    open var currentPageIndex: Int { return _currentPageIndex }
+    
+    open var visibleCells: [UIView] { return scrollView.subviews }
+    
+    public init() {
         super.init(frame: CGRect.zero)
         initialize()
     }
@@ -90,9 +85,7 @@ open class SwiftPagedFlow: UIView {
         initialize()
     }
 
-    deinit {
-        scrollView.delegate = nil
-    }
+    deinit { scrollView.delegate = nil }
     // MARK: - Private
     fileprivate lazy var needReload = false
     fileprivate var _currentPageIndex: Int = 0 {
@@ -113,16 +106,12 @@ open class SwiftPagedFlow: UIView {
 extension SwiftPagedFlow {
     public func reloadData() {
         needReload = true
-        for view in scrollView.subviews {
-            view.removeFromSuperview()
-        }
+        for view in scrollView.subviews { view.removeFromSuperview() }
         self.setNeedsLayout()
     }
 
-    public func dequeueReusableCell() -> UIView! {
-        if reusableCells.count > 0 {
-            return reusableCells.removeLast()
-        }
+    public func dequeueReusableCell() -> UIView? {
+        if reusableCells.count > 0 { return reusableCells.removeLast() }
         return nil
     }
 
@@ -138,10 +127,8 @@ extension SwiftPagedFlow {
         }
     }
 
-    public func getCurrentView() -> UIView! {
-        if _currentPageIndex < cells.count {
-            return cells[_currentPageIndex] as? UIView
-        }
+    public func getCurrentView() -> UIView? {
+        if _currentPageIndex < cells.count { return cells[_currentPageIndex] as? UIView }
         return nil
     }
 
@@ -150,14 +137,10 @@ extension SwiftPagedFlow {
         if autoStart { startLoop() }
     }
 
-    public func startLoop() {
-        autoLoopNext()
-    }
+    public func startLoop() { autoLoopNext() }
 
-    public func stopLoop() {
-        cancel(task)
-    }
-
+    public func stopLoop() { cancel(task) }
+    
 }
 // MARK: - override
 extension SwiftPagedFlow {
@@ -170,27 +153,20 @@ extension SwiftPagedFlow {
                 pageCount = count
                 pageControl.numberOfPages = count
             }
-            if let size = delegate?.sizeForPageInFlowView(self) {
-                pageSize = size
-            }
+            if let size = delegate?.sizeForPageInFlowView(self) { pageSize = size }
             reusableCells.removeAll(keepingCapacity: false)
             visibleRange = NSMakeRange(0, 0)
             for i in 0..<cells.count {
                 removeCellAtIndex(i)
             }
             cells.removeAll(keepingCapacity: false)
-            for _ in 0..<pageCount {
-                cells.append(NSNull())
-            }
+            for _ in 0..<pageCount { cells.append(NSNull()) }
             let h = orientation == .horizontal
             let width = h ? pageSize.width * CGFloat(pageCount): pageSize.width
             let height = h ? pageSize.height : pageSize.height * CGFloat(pageCount)
-            let size = CGSize(width: width, height: height)
             scrollView.frame = CGRect(x: 0, y: 0, width: pageSize.width, height: pageSize.height)
-
-            scrollView.contentSize = size
-            let theCenter = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
-            scrollView.center = theCenter
+            scrollView.contentSize = CGSize(width: width, height: height)
+            scrollView.center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
         }
         setPagesAtContentOffset(scrollView.contentOffset)
         refreshVisibleCellAppearance()
@@ -207,9 +183,7 @@ extension SwiftPagedFlow {
             let x = point.x - sp.x + os.x
             let y = point.y - sp.y + os.y
             let p = CGPoint(x: x, y: y)
-            if scrollView .point(inside: p, with: event) {
-                return scrollView.hitTest(p, with: event)
-            }
+            if scrollView .point(inside: p, with: event) { return scrollView.hitTest(p, with: event) }
             return scrollView
         }
         return nil
@@ -230,14 +204,16 @@ extension SwiftPagedFlow {
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
         scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        
+        /*由于UIScrollView在滚动之后会调用自己的layoutSubviews以及父View的layoutSubviews
+         这里为了避免scrollview滚动带来自己layoutSubviews的调用,所以给scrollView加了一层父View
+         */
         let superViewOfScrollView = UIView(frame: self.bounds)
         superViewOfScrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         superViewOfScrollView.backgroundColor = UIColor.clear
         superViewOfScrollView.addSubview(scrollView)
         self.addSubview(superViewOfScrollView)
-
         self.addSubview(pageControl)
-
         adjustBounce()
     }
 
@@ -250,20 +226,20 @@ extension SwiftPagedFlow {
     fileprivate func queueReusableCell(_ cell: UIView) {
         reusableCells.append(cell)
     }
+    
     fileprivate func removeCellAtIndex(_ index: Int) {
         if let cell = cells[index] as? UIView {
             queueReusableCell(cell)
             if cell.superview != nil {
                 cell.layer.transform = CATransform3DIdentity
-                cell .removeFromSuperview()
+                cell.removeFromSuperview()
             }
             cells[index] = NSNull()
         }
     }
+    
     fileprivate func refreshVisibleCellAppearance() {
-        if minimumPageAlpha == 1.0 && minimumPageScale == 1.0 {
-            return
-        }
+        if minimumPageAlpha == 1.0 && minimumPageScale == 1.0 { return }
         let start = visibleRange.location
         let end = start + visibleRange.length
         let h = orientation == .horizontal
@@ -287,9 +263,7 @@ extension SwiftPagedFlow {
     }
 
     fileprivate func setPagesAtContentOffset(_ offset: CGPoint) {
-        if cells.count == 0 {
-            return
-        }
+        if cells.count == 0 { return }
         let h = orientation == .horizontal
         let startPoint = CGPoint(x: offset.x - scrollView.frame.origin.x, y: offset.y - scrollView.frame.origin.y)
         let endPoint = CGPoint(x: max(0, startPoint.x) + self.bounds.size.width, y: max(0, startPoint.y) + self.bounds.size.height)
@@ -315,36 +289,24 @@ extension SwiftPagedFlow {
                 break
             }
         }
-        //可见页分别向前向后扩展一个，提高效率
-        startIndex = max(startIndex - 1, 0)
-        endIndex = min(endIndex + 1, cells.count - 1)
-        if visibleRange.location == startIndex && visibleRange.length == (endIndex - startIndex + 1) {
-            return
-        }
+        startIndex = max(startIndex, 0)
+        endIndex = min(endIndex, cells.count - 1)
+        
+        if visibleRange.location == startIndex && visibleRange.length == (endIndex - startIndex + 1) { return }
+        for i in 0..<startIndex { removeCellAtIndex(i) }
+        for i in startIndex...endIndex { setPageAtIndex(i) }
+        for i in (endIndex + 1)..<cells.count { removeCellAtIndex(i) }
         visibleRange.location = startIndex
         visibleRange.length = endIndex - startIndex + 1
-        for i in startIndex...endIndex {
-            setPageAtIndex(i)
-        }
-        for i in 0..<startIndex {
-            removeCellAtIndex(i)
-        }
-        for i in endIndex + 1..<cells.count {
-            removeCellAtIndex(i)
-        }
     }
 
     fileprivate func autoLoopNext() {
-        if timeInterVal == 0 {
-            return
-        }
+        if timeInterVal == 0 { return }
         cancel(task)
         task = delay(TimeInterval(timeInterVal), work: { [weak self] () -> Void in
             guard let sself = self else { return }
             var next = sself._currentPageIndex + 1
-            if next >= sself.dataSource?.numberOfPagesInFlowView(sself) {
-                next = 0
-            }
+            if next >= sself.dataSource?.numberOfPagesInFlowView(sself) { next = 0 }
             DispatchQueue.main.async(execute: { () -> Void in
                 sself._currentPageIndex = next
                 sself.pageControl?.currentPage = next
@@ -354,9 +316,10 @@ extension SwiftPagedFlow {
     }
 
     fileprivate func setPageAtIndex(_ index: Int) {
+        guard let value = dataSource else { return }
         if index >= 0 && index < cells.count {
             if let _ = cells[index] as? NSNull {
-                let aCell = dataSource.cellForPageAtIndex(self, index: index)
+                let aCell = value.cellForPageAtIndex(self, index: index)
                 cells[index] = aCell
                 let fIndex = CGFloat(index)
                 switch orientation {
@@ -372,10 +335,7 @@ extension SwiftPagedFlow {
                     scrollView .addSubview(aCell)
                 }
             }
-        } else {
-            debugPrint("index over bounds")
-        }
-
+        } else { debugPrint("index over bounds") }
     }
 
     func handleTapGesture(_ tap: UIGestureRecognizer) {
@@ -387,7 +347,6 @@ extension SwiftPagedFlow {
         }
     }
 
-
 }
 // MARK: - UIScrollViewDelegate
 extension SwiftPagedFlow: UIScrollViewDelegate {
@@ -395,8 +354,8 @@ extension SwiftPagedFlow: UIScrollViewDelegate {
         setPagesAtContentOffset(scrollView.contentOffset)
         refreshVisibleCellAppearance()
     }
+    
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-
         let horizontal = orientation == .horizontal
         let up = horizontal ? scrollView.contentOffset.x : scrollView.contentOffset.y
         let down = horizontal ? pageSize.width : pageSize.height
@@ -420,16 +379,13 @@ func delay(_ time: TimeInterval, work: @escaping () -> ()) -> CancelableTask? {
     var finalTask: CancelableTask?
 
     let cancelableTask: CancelableTask = { cancel in
-        if cancel {
-            finalTask = nil // key
-        } else {
-            DispatchQueue.main.async(execute: work)
-        }
+        if cancel { finalTask = nil }
+        else { DispatchQueue.main.async(execute: work) }
     }
 
     finalTask = cancelableTask
 
-    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(time * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + time) {
         if let task = finalTask {
             task(false)
         }
@@ -438,6 +394,4 @@ func delay(_ time: TimeInterval, work: @escaping () -> ()) -> CancelableTask? {
     return finalTask
 }
 
-func cancel(_ cancelableTask: CancelableTask?) {
-    cancelableTask?(true)
-}
+func cancel(_ cancelableTask: CancelableTask?) { cancelableTask?(true) }

@@ -54,7 +54,8 @@ extension ViewController: SwiftPagedFlowViewDelegate, SwiftPagedFlowViewDataSour
             aview.layer.masksToBounds = true
             view = aview
         }
-        view?.image = UIImage(named: "\(index).tiff", in: nil, compatibleWith: nil)
+        let g = Float(10 * index) / 255
+        view?.backgroundColor = .orange//UIColor(colorLiteralRed: 100/255, green: g, blue: 100/255, alpha: 1)
         return view!
     }
     
@@ -64,9 +65,9 @@ extension ViewController: SwiftPagedFlowViewDelegate, SwiftPagedFlowViewDataSour
         return CGSize(width: width, height: width*0.75)
     }
     func didScrollToPageAtIndex(_ flowView: SwiftPagedFlow, index: Int){
-        debugPrint("Scrolled to page:\(index)")
+//        debugPrint("Scrolled to page:\(index)")
     }
     func didTapPageAtIndex(_ flowView: SwiftPagedFlow, index: Int){
-        debugPrint("Tapped on page:\(index)")
+//        debugPrint("Tapped on page:\(index)")
     }
 }
