@@ -115,13 +115,13 @@ extension SwiftPagedFlow {
         return nil
     }
 
-    public func scrollToPage(_ page: Int) {
+    public func scrollToPage(_ page: Int, animated: Bool = true) {
         if page < pageCount {
             let horizontal = orientation == .horizontal
             var offset: CGFloat = horizontal ? pageSize.width : pageSize.height
             offset *= CGFloat(page)
             let point = CGPoint(x: horizontal ? offset : 0, y: horizontal ? 0 : offset)
-            scrollView.setContentOffset(point, animated: true)
+            scrollView.setContentOffset(point, animated: animated)
             setPagesAtContentOffset(scrollView.contentOffset)
             refreshVisibleCellAppearance()
         }
