@@ -54,8 +54,7 @@ extension ViewController: SwiftPagedFlowViewDelegate, SwiftPagedFlowViewDataSour
             aview.layer.masksToBounds = true
             view = aview
         }
-        let g = Float(10 * index) / 255
-        view?.backgroundColor = .orange//UIColor(colorLiteralRed: 100/255, green: g, blue: 100/255, alpha: 1)
+        view?.backgroundColor = .orange
         return view!
     }
     
