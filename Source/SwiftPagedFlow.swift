@@ -104,6 +104,7 @@ open class SwiftPagedFlow: UIView {
 }
 // MARK: - Public func
 extension SwiftPagedFlow {
+    
     public func reloadData() {
         needReload = true
         for view in scrollView.subviews { view.removeFromSuperview() }
